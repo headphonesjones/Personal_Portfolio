@@ -1,0 +1,296 @@
+// bower:scss
+// endbower
+
+// Custom imports & styles here.
+
+$darkBrown: #2C2918;
+$darkGray: #030000;
+$lightGray: #3E3F41;
+$offWhite: #F7F7F7;
+$lightBrown: #A19B88;
+$highlight: #CA0700;
+
+@import url(http://fonts.googleapis.com/css?family=Sanchez);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,700);
+body{
+	background: url("http://subtlepatterns.com/patterns/45degreee_fabric.png") repeat scroll 0% 0% transparent;
+}
+
+h1, h2, h3, h4, h5, h6, p, span{
+	font-family: 'Open Sans', sans-serif;
+
+}
+
+h1{
+	font-weight: 700;
+	text-transform: uppercase;
+	line-height: 1.1em;
+}
+p{
+	font-family: 'Sanchez', serif;
+}
+ul > li > a{
+	color: $lightBrown;
+	transition: all 1s ease;
+	text-transform: uppercase;
+
+	&:hover{
+		color: $highlight;
+	}
+}
+.active{
+	color: $lightGray;
+}
+.button{
+	background-color: $lightBrown;
+	transition: all 1s ease;
+	font-family: 'Sanchez', serif;
+
+	&:hover{
+		background-color: $highlight;
+	}
+}
+.font-change-sans-serif{
+	font-family: 'Open Sans', sans-serif;
+}
+#header_container{
+	height: 12%;
+	width: 100%;
+}
+
+.logo_container{
+	
+
+	#logo{
+		position: absolute;
+		width: 85px;	
+	}
+}
+
+
+#nav{
+	margin-left: 10px;
+	position: absolute;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 200;
+	font-size: 1.25em;
+}
+
+
+.home_background{
+	background-image: url("../images/desk.jpg");
+	background-position: -100px;
+	width: 60%;
+	height: 100%;
+	position: fixed;
+	top: 0px;
+	right: 0px;
+	z-index: -1;
+
+}
+
+.home_text_container{
+	margin-top: 20px;
+	padding: 40px;
+	background-color: $offWhite;
+}
+
+#home_work-button{
+	float: right;
+	margin-top: 20px;
+	background-color: $highlight;
+	border: 2px solid transparent;
+	transition: all .5s ease;
+
+	&:hover{
+		color: $highlight;
+		background-color: transparent;
+		border: 2px solid $highlight;
+	}
+}
+
+#home_process-button{
+	position: absolute;
+	bottom: -20px;
+	width: 40%;
+	height: 80px;
+	padding-top: 32px;
+
+	background-color: $lightGray;
+	color: $offWhite;
+
+	&:hover{
+		background-color: $darkGray;
+		color: $offWhite;
+	}
+}
+
+
+/* Process SCSS */
+
+.process_container{
+	width: 100%;
+	background: url("http://subtlepatterns.com/patterns/45degreee_fabric.png") repeat scroll 0% 0% transparent;
+	z-index: 10;
+	position: absolute;
+	top: 100%;
+}
+
+#home_return-link{
+	color: darken($highlight, 20%);
+	background-color: $offWhite;
+	font-size: 1em;
+	transition: all 1s ease;
+	font-size: 'Open Sans', sans-serif;
+	text-transform: uppercase;
+	font-weight: 200;
+	position: absolute;
+	top: 0;
+	z-index: 100;
+	&:hover{
+		color: $highlight;
+	}
+}
+
+.process_left_container-title{
+	background-color: $offWhite;
+	height: 100px;
+}
+
+.process_left-title{
+	color: $highlight;
+	text-align: center;
+	padding-top: 2px;
+	font-size: 1.2em;
+	font-weight: 700;
+}
+
+.process_left-step{
+	color: $lightGray;
+	text-align: center;
+	padding-top: 14px;
+}
+.process_left_container-description{
+	background-color: $lightGray;
+	float: left;
+	position: absolute;
+	top: 200px;
+	z-index: 10;
+
+	p{
+		color: $offWhite;
+		padding: 20px;
+		margin-top: 12px;
+	}
+}
+
+
+.process_right_container-title{
+	background-color: $offWhite;
+	height: 100px;
+}
+
+.process_right-title{
+	color: $highlight;
+	text-align: center;
+	padding-top: 2px;
+	font-size: 1.2em;
+	font-weight: 700;
+}
+
+.process_right-step{
+	color: $lightGray;
+	text-align: center;
+	padding-top: 14px;
+}
+.process_right_container-description{
+	background-color: $lightGray;
+	float: right;
+	margin-top: 20px;
+	z-index: 10;
+	width: 410px;
+	position: relative;
+	bottom: 342px;
+
+	p{
+		color: $offWhite;
+		padding: 20px;
+		margin-top: 12px;
+	}
+}
+#process_container-id{
+	padding-top: 80px;
+
+	h2{
+		color: $highlight;
+		text-align: center;
+		position: absolute;
+		top: 10px;
+	}
+}
+#process-main-title{
+	text-transform: center;
+	float: right;
+	position: fixed;
+	right:20px;
+	font-size: 1.5em;
+	font-weight: 700;
+}
+.process_right_container-image, .process_left_container-image{
+	margin-bottom: 20px;
+}
+
+.process-step-three{
+	position: relative;
+	bottom: 160px;
+}
+.process_center_container-title{
+	background-color: $offWhite;
+	height: 200px;
+	z-index: 10;
+	position: absolute;
+	left: 35%;
+	
+}	
+.process_center_container-image{
+	margin-top: 100px;
+}
+.process_center-title{
+	color: $highlight;
+	text-align: center;
+	padding-top: 2px;
+	font-size: 1.4em;
+	font-weight: 700;
+}
+
+.process_center-step{
+	color: $lightGray;
+	text-align: center;
+	padding-top: 60px;
+}
+
+.process_center_container-description{
+	background-color: $lightGray;
+	margin-top: 20px;
+	z-index: 10;
+	float: left;
+	position: relative;
+	bottom: 60px;
+	p{
+		color: $offWhite;
+		padding: 20px;
+		margin-top: 12px;
+	}
+}
+.process_container-buttons{
+	position: relative;
+	bottom: 140px;
+	left: 25px;
+}
+
+footer{
+	p{
+		font-family: 'Open Sans', sans-serif;
+		text-align: center;
+	}
+}
