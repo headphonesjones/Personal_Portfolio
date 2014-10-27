@@ -27,27 +27,35 @@
 <![endif]-->
 <div class="large-12 columns" id="header_container">
     <div class="small-1 columns logo_container">
-        <img src="images/logo.svg" alt="Jordan Johnson Design Development Logo" id="logo" />
+        <a href="#"><img src="images/logo.svg" alt="Jordan Johnson Design Development Logo" id="logo" /></a>
 
     </div>
     <div class="small-11 columns nav_container">
         <ul class="inline-list" id="nav"> 
             <li><a href="#" class="active">Home</a></li> 
-            <li><a href="#">Work</a></li> 
-            <li><a href="#">Contact</a></li> 
+            <li><a href="work.html">Work</a></li> 
+            <li id="contact-link"><a href="#">Contact</a></li> 
         </ul>
     </div>
 </div>
-
+<span class="success-email-sent" id="success-message">Your email was successfully sent to Jordan!</span>
 <div class="home_background" id="home_background-image">
 
 </div>
 
 <div class="large-7 columns medium-10 home_text_container">
-    <h1>Designing and building websites is what I do.</h1>
-    <h5>When it comes to websites it comes down to two things: what function is the website going serve and who is the website for.  If you know those two things, we can do some great works and bring your dream website to life.</h5>
-
-    <a href="#" class="button" id="home_work-button">View My Work</a>
+    <h1>You Will Know My Name.<br /><span id="home-hide-text" class="hide-text">And Now I'll Know Yours.</span></h1>
+    <h5 id="home-text">You will know my name is an idea. An idea that drives me every single day.  The idea that one day you will know my name because of the impact I have made in my field. I am a web developer and I plan on doing some big things. Let's do big things together.<br /><br />
+    
+    Your idea, genius. Your business plan, flawless. Your web skills, lacking. Whether you need a storefront, blog, intranet, or all of the above in one; Let me take care of the tricky coding and design while you focus on getting your vision to the finish line.</h5>
+	<div class="large-12 columns contact_container" id="contact-holder">
+		<input type="text" autofocus="true" placeholder="Name" id="name-input" required/>
+		<input type="email" placeholder="address@email.com" id="email-input" required/>
+		<textarea id="message-input" placeholder="Message"></textarea>
+	</div>
+    <a href="work.html" class="button" id="home_work-button">View My Work</a>
+    <a href="#" class="button" id="home_contact-button">Send</a>
+    
 </div>
 <div class="row">
 </div>

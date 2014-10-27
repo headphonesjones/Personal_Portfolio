@@ -43,26 +43,32 @@ ul > li > a {
   width: 85px; }
 
 #nav {
-  margin-left: 10px;
   position: absolute;
   font-family: 'Open Sans', sans-serif;
   font-weight: 200;
-  font-size: 1.25em; }
+  font-size: 1.25em;
+  opacity: 0; }
 
 .home_background {
-  background-image: url("../images/desk.jpg");
+  background-image: url("../images/forrest.jpg");
   background-position: -100px;
   width: 60%;
-  height: 100%;
+  height: 120%;
   position: fixed;
   top: 0px;
   right: 0px;
-  z-index: -1; }
+  z-index: -1;
+  background-size: cover;
+  background-repeat: no-repeat; }
 
 .home_text_container {
   margin-top: 20px;
   padding: 40px;
-  background-color: #F7F7F7; }
+  background-color: #F7F7F7;
+  margin-left: 30px; }
+
+#home-text {
+  line-height: 1.65em; }
 
 #home_work-button {
   float: right;
@@ -75,22 +81,37 @@ ul > li > a {
     background-color: transparent;
     border: 2px solid #CA0700; }
 
+#home_contact-button {
+  float: right;
+  margin-top: 20px;
+  background-color: #CA0700;
+  border: 2px solid transparent;
+  transition: all 0.5s ease;
+  opacity: 0;
+  position: relative;
+  right: -227px;
+  top: 117px; }
+  #home_contact-button:hover {
+    color: #F7F7F7;
+    background-color: #970500; }
+
 #home_process-button {
   position: absolute;
   bottom: -20px;
-  width: 40%;
+  width: 36%;
   height: 80px;
   padding-top: 32px;
-  background-color: #3E3F41;
+  margin-left: 2%;
+  background-color: #A19B88;
   color: #F7F7F7; }
   #home_process-button:hover {
-    background-color: #030000;
+    background-color: #2C2918;
     color: #F7F7F7; }
 
 /* Process SCSS */
 .process_container {
   width: 100%;
-  background: url("http://subtlepatterns.com/patterns/45degreee_fabric.png") repeat scroll 0% 0% transparent;
+  background: url("http://subtlepatterns.com/patterns/sandpaper.png") repeat scroll 0% 0% transparent;
   z-index: 10;
   position: absolute;
   top: 100%; }
@@ -157,7 +178,7 @@ ul > li > a {
   float: right;
   margin-top: 20px;
   z-index: 10;
-  width: 410px;
+  width: 450px;
   position: relative;
   bottom: 342px; }
   .process_right_container-description p {
@@ -230,3 +251,107 @@ ul > li > a {
 footer p {
   font-family: 'Open Sans', sans-serif;
   text-align: center; }
+
+.hide-text {
+  opacity: 0; }
+
+.contact_container {
+  position: absolute;
+  bottom: 20px;
+  opacity: 0;
+  width: 92%; }
+
+.success-email-sent {
+  color: #CA0700;
+  font-weight: bold;
+  position: fixed;
+  top: 10px;
+  opacity: 0;
+  left: 180px; }
+
+#name-input {
+  background-color: #F7F7F7;
+  border-bottom: 2px solid #CA0700;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  box-shadow: none; }
+
+#email-input {
+  background-color: #F7F7F7;
+  border-bottom: 2px solid #CA0700;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  box-shadow: none; }
+
+#message-input {
+  background-color: #F7F7F7;
+  border-bottom: 2px solid #CA0700;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  box-shadow: none;
+  height: 180px; }
+
+.work_project_container-title {
+  padding: 40px;
+  text-align: center;
+  background-color: #F7F7F7;
+  margin-bottom: 50px; }
+  .work_project_container-title h3 {
+    color: #CA0700;
+    margin-bottom: 20px; }
+
+.work_project_container-description {
+  border-top: 2px solid #3E3F41;
+  padding-top: 25px; }
+  .work_project_container-description p {
+    text-align: left; }
+
+.icons_container {
+  float: right;
+  padding-top: 20px;
+  color: #CA0700; }
+
+.icons_work {
+  margin-right: 25px; }
+  .icons_work i {
+    margin-right: 20px;
+    font-size: 2em;
+    float: right;
+    position: relative;
+    top: -12px; }
+
+#contact-holder-work {
+  opacity: 0;
+  display: none; }
+
+#name-input-work {
+  background-color: #F7F7F7;
+  border-bottom: 2px solid #CA0700;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  box-shadow: none; }
+
+#email-input-work {
+  background-color: #F7F7F7;
+  border-bottom: 2px solid #CA0700;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  box-shadow: none; }
+
+#message-input-work {
+  background-color: #F7F7F7;
+  border-bottom: 2px solid #CA0700;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  box-shadow: none;
+  height: 180px; }
+
+#work_contact-button:hover {
+  color: #F7F7F7;
+  background-color: #970500; }

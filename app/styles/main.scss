@@ -69,23 +69,25 @@ ul > li > a{
 
 
 #nav{
-	margin-left: 10px;
 	position: absolute;
 	font-family: 'Open Sans', sans-serif;
 	font-weight: 200;
 	font-size: 1.25em;
+	opacity: 0;
 }
 
 
 .home_background{
-	background-image: url("../images/desk.jpg");
+	background-image: url("../images/forrest.jpg");
 	background-position: -100px;
 	width: 60%;
-	height: 100%;
+	height: 120%;
 	position: fixed;
 	top: 0px;
 	right: 0px;
 	z-index: -1;
+	background-size: cover;
+	background-repeat: no-repeat;
 
 }
 
@@ -93,6 +95,10 @@ ul > li > a{
 	margin-top: 20px;
 	padding: 40px;
 	background-color: $offWhite;
+	margin-left: 30px;
+}
+#home-text{
+	line-height: 1.65em;
 }
 
 #home_work-button{
@@ -109,18 +115,36 @@ ul > li > a{
 	}
 }
 
+#home_contact-button{
+	float: right;
+	margin-top: 20px;
+	background-color: $highlight;
+	border: 2px solid transparent;
+	transition: all .5s ease;
+	opacity: 0;
+	position: relative;
+	right: -227px;
+	top: 117px;
+
+	&:hover{
+		color: $offWhite;
+		background-color: darken($highlight, 10%)
+	}
+}
+
 #home_process-button{
 	position: absolute;
 	bottom: -20px;
-	width: 40%;
+	width: 36%;
 	height: 80px;
 	padding-top: 32px;
+	margin-left: 2%;
 
-	background-color: $lightGray;
+	background-color: $lightBrown;
 	color: $offWhite;
 
 	&:hover{
-		background-color: $darkGray;
+		background-color: $darkBrown;
 		color: $offWhite;
 	}
 }
@@ -130,7 +154,7 @@ ul > li > a{
 
 .process_container{
 	width: 100%;
-	background: url("http://subtlepatterns.com/patterns/45degreee_fabric.png") repeat scroll 0% 0% transparent;
+	background: url("http://subtlepatterns.com/patterns/sandpaper.png") repeat scroll 0% 0% transparent;
 	z-index: 10;
 	position: absolute;
 	top: 100%;
@@ -208,7 +232,7 @@ ul > li > a{
 	float: right;
 	margin-top: 20px;
 	z-index: 10;
-	width: 410px;
+	width: 450px;
 	position: relative;
 	bottom: 342px;
 
@@ -292,5 +316,134 @@ footer{
 	p{
 		font-family: 'Open Sans', sans-serif;
 		text-align: center;
+	}
+}
+
+.hide-text{
+	opacity: 0;
+}
+
+.contact_container{
+	position: absolute;
+	bottom: 20px;
+	opacity: 0;
+	width: 92%;
+}
+
+.success-email-sent{
+	color: $highlight;
+	font-weight: bold;
+	position: fixed;
+	top: 10px;
+	opacity: 0;
+	left: 180px;
+}
+
+#name-input{
+	background-color: $offWhite;
+	border-bottom: 2px solid $highlight;
+	border-top: none;
+	border-left: none;
+	border-right: none;
+	box-shadow: none;
+}
+#email-input{
+	background-color: $offWhite;
+	border-bottom: 2px solid $highlight;
+	border-top: none;
+	border-left: none;
+	border-right: none;
+	box-shadow: none;	
+}
+
+#message-input{
+	background-color: $offWhite;
+	border-bottom: 2px solid $highlight;
+	border-top: none;
+	border-left: none;
+	border-right: none;
+	box-shadow: none;
+	height: 180px;	
+}
+
+
+
+
+
+.work_project_container-title{
+	padding: 40px;
+	text-align: center;
+	background-color: $offWhite;
+	margin-bottom: 50px;
+	
+	h3{
+		color: $highlight;
+			margin-bottom: 20px;
+	}
+}
+
+.work_project_container-description{
+	border-top: 2px solid $lightGray;
+	padding-top: 25px;
+	
+	p{
+		text-align: left;
+	}
+}
+.icons_container{
+	float: right;
+	padding-top: 20px;
+	color: $highlight;
+}
+.icons_work{
+	margin-right: 25px;
+
+	
+	i{
+		margin-right: 20px;
+		font-size: 2em;
+		float: right;
+		position: relative;
+		top: -12px;
+	}
+}
+
+#contact-holder-work{
+	opacity: 0;
+	display: none;
+}
+
+#name-input-work{
+	background-color: $offWhite;
+	border-bottom: 2px solid $highlight;
+	border-top: none;
+	border-left: none;
+	border-right: none;
+	box-shadow: none;
+}
+#email-input-work{
+	background-color: $offWhite;
+	border-bottom: 2px solid $highlight;
+	border-top: none;
+	border-left: none;
+	border-right: none;
+	box-shadow: none;	
+}
+
+#message-input-work{
+	background-color: $offWhite;
+	border-bottom: 2px solid $highlight;
+	border-top: none;
+	border-left: none;
+	border-right: none;
+	box-shadow: none;
+	height: 180px;	
+}
+
+#work_contact-button{
+
+	&:hover{
+		color: $offWhite;
+		background-color: darken($highlight, 10%)
 	}
 }
